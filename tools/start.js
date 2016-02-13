@@ -31,19 +31,20 @@ async function start() {
       if (Array.isArray(config.entry)) {
         config.entry.unshift('webpack-hot-middleware/client');
       } else {
+        /* eslint-disable no-param-reassign */
         config.entry = ['webpack-hot-middleware/client', config.entry];
+        /* eslint-enable no-param-reassign */
       }
 
       config.plugins.push(new webpack.HotModuleReplacementPlugin());
       config.plugins.push(new webpack.NoErrorsPlugin());
       config.module.loaders
         .filter(x => x.loader === 'babel-loader')
-        .forEach(x => x.query = {
+        .forEach(x => x.query = { // eslint-disable-line no-param-reassign
           // Wraps all React components into arbitrary transforms
           // https://github.com/gaearon/babel-plugin-react-transform
-          plugins: ['react-transform'],
-          extra: {
-            'react-transform': {
+          plugins: [
+            ['react-transform', {
               transforms: [
                 {
                   transform: 'react-transform-hmr',
@@ -55,7 +56,8 @@ async function start() {
                 },
               ],
             },
-          },
+            ],
+          ],
         });
     });
 
