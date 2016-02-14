@@ -8,6 +8,7 @@
  */
 
 import React, { Component, PropTypes } from 'react';
+import { Button } from 'react-bootstrap';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.scss';
 import Header from '../Header';
@@ -57,6 +58,8 @@ class App extends Component {
       <div>
         <Header />
         {this.props.children}
+        {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
+        <Button bsStyle="primary">Primary</Button>
         <Footer />
       </div>
     ) : this.props.children;
