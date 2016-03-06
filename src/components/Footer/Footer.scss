@@ -10,8 +10,11 @@
 @import '../variables.scss';
 
 .root {
-  background: #333;
-  color: #fff;
+  background: #FFF;
+  color: #000;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 30px;
 }
 
 .container {
@@ -19,19 +22,21 @@
   padding: 20px 15px;
   max-width: $max-content-width;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
 }
 
 .text {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(0, 0, 0, .5);
 }
 
 .textMuted {
   composes: text;
-  color: rgba(255, 255, 255, .3);
+  color: rgba(0, 0, 0, .3);
 }
 
 .spacer {
-  color: rgba(255, 255, 255, .3);
+  color: rgba(0, 0, 0, .3);
 }
 
 .text,
@@ -43,10 +48,36 @@
 .link,
 .link:active,
 .link:visited {
-  color: rgba(255, 255, 255, .6);
+  color: rgba(0, 0, 0, .6);
   text-decoration: none;
 }
 
 .link:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.banner {
+  text-align: center;
+}
+
+.bannerTitle {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  line-height: 33px;
+  font-weight: 300;
+  color: #424242;
+}
+
+.bannerDesc {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.75;
+  font-weight: 300;
+  color: #424242;
+  word-wrap: break-word;
+}
+
+.bannerBottom {
+  margin-bottom: 20px;
 }

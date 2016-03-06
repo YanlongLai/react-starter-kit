@@ -1,0 +1,130 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.scss';
+
+$brand-color: #61dafb;
+
+.root {
+  padding: 0;
+  border-bottom: none;
+  background: rgba(0,0,0,0.05);
+
+}
+
+.container {
+  word-wrap: break-word;
+  height: 520px;
+}
+
+.brand {
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  width: 50%;
+  border: 1em solid red;
+  // float: left;
+}
+
+.brandTxt {
+  margin-left: 10px;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif, inherit;
+}
+
+.nav {
+  float: right;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.opacityWindow {
+  background: #000;
+  opacity: 0.7;
+  filter: alpha(opacity=70); // IE8 與更早的版本
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px;
+}
+
+.banner {
+  text-align: center;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  background-image: url("https://venturedemo.files.wordpress.com/2015/09/venture_18.jpeg?w=1280");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: scroll;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  display: table-cell;
+  vertical-align: middle;
+  height: 520px;
+  position: relative;
+}
+
+.bannerRight {
+  text-align: center;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  background-image: url("https://venturedemo.files.wordpress.com/2015/09/venture_15.jpeg?w=1280");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: scroll;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  display: table-cell;
+  vertical-align: middle;
+  height: 520px;
+  position: relative;
+}
+
+.bannerTitle {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 33px;
+  font-weight: 300;
+  color: #FFF;
+}
+
+.bannerDesc {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  color: #FFF;
+  word-wrap: break-word;
+  margin-bottom: 35px;
+}
+.moreLink {
+  text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  text-decoration: none;
+  margin-bottom: 0;
+  color: #ffffff;
+  display: inline-block;
+  border: 2px solid;
+  padding: 8px 22px;
+  font-size: 13px;
+  border-radius: 30px;
+  font-weight: 400;
+  border-radius: 30px;
+  border-width: 2px;
+  border-style: solid;
+}

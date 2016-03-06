@@ -18,13 +18,19 @@ class Footer extends Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <span className={s.text}>© Your Company</span>
+          <div className={s.banner}>
+            <h1 className={s.bannerTitle}>Contact Us</h1>
+            <p className={s.bannerDesc}>laiyanlong@gmail.com</p>
+            <p className={s.bannerDesc}>(+886) 926001927</p>
+            <p className={s.bannerBottom}>&nbsp;</p>
+          </div>
+          <span className={s.text}>© 2016 AppStore</span>
           <span className={s.spacer}>·</span>
           <Link className={s.link} to="/">Home</Link>
           <span className={s.spacer}>·</span>
           <Link className={s.link} to="/privacy">Privacy</Link>
           <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/not-found">Not Found</Link>
+          <Link className={s.link} to="/not-found">Map</Link>
         </div>
       </div>
     );

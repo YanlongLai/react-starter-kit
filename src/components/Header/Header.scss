@@ -15,27 +15,40 @@ $brand-color: #61dafb;
   background: #000;
   color: #FFF;
   box-shadow: 0 1px 1px 0px rgba(0,0,0,0.05);
+  text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  // padding: 30px;
+  background-image: url("https://venturedemo.files.wordpress.com/2015/09/venture_25.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .container {
   margin: 0 auto;
   padding: 20px 0;
-  max-width: $max-content-width;
+  // max-width: $max-content-width;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80); // IE8 與更早的版本
 }
 
 .brand {
-  color: color($brand-color lightness(+10%));
+  color: color(#FFF lightness(+10%));
   text-decoration: none;
-  font-size: 1.75em; /* ~28px */
+  font-size: 1.2em; /* ~28px */
+  font-weight: 400;
 }
 
 .brandTxt {
   margin-left: 10px;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif, inherit;
 }
 
 .nav {
   float: right;
-  margin-top: 6px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
 .banner {
@@ -43,16 +56,23 @@ $brand-color: #61dafb;
 }
 
 .bannerTitle {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em;
+  font-size: 64px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 30px auto;
+  max-width: 700px;
+  letter-spacing: -1px;
+  background-color: transparent;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .bannerDesc {
-  padding: 0;
-  color: rgba(255, 255, 255, .5);
-  font-size: 1.25em;
-  margin: 0;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 6px;
 }

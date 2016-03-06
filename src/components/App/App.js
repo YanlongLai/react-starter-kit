@@ -12,6 +12,12 @@ import { Button } from 'react-bootstrap';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.scss';
 import Header from '../Header';
+import Content from '../Content';
+import Feature from '../Feature';
+import ContentWork from '../ContentWork';
+import Testimonials from '../Testimonials';
+import ContentNews from '../ContentNews';
+import FeatureMore from '../FeatureMore';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
 
@@ -46,7 +52,8 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.removeCss = this.props.context.insertCss(s);
+    const { insertCss } = this.props.context;
+    this.removeCss = insertCss(s);
   }
 
   componentWillUnmount() {
@@ -57,9 +64,12 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
-        {this.props.children}
-        {/* Provides extra visual weight and identifies the primary action in a set of buttons */}
-        <Button bsStyle="primary">Primary</Button>
+        <Content />
+        <Feature />
+        <ContentWork />
+        <Testimonials />
+        <ContentNews />
+        <FeatureMore />
         <Footer />
       </div>
     ) : this.props.children;

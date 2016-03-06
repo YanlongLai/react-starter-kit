@@ -1,0 +1,99 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.scss';
+
+$brand-color: #61dafb;
+
+.root {
+  background: #FFF;
+  color: #424242;
+  box-shadow: 0 1px 1px 0px rgba(0,0,0,0.05);
+  padding: 120px 30px;
+  display: block;
+  // padding: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  // max-width: $max-content-width;
+}
+
+.brand {
+  color: color(#FFF lightness(+10%));
+  text-decoration: none;
+  font-size: 1.2em; /* ~28px */
+  font-weight: 400;
+}
+
+.brandTxt {
+  margin-left: 10px;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif, inherit;
+}
+
+.nav {
+  float: right;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.banner {
+  text-align: center;
+}
+
+.bannerTitle {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 33px;
+  font-weight: 300;
+  color: #424242;
+}
+
+.bannerDesc {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  color: #424242;
+  word-wrap: break-word;
+  margin-bottom: 60px;
+}
+
+.imageContainer {
+  box-sizing: border-box;
+  color: rgb(66, 66, 66);
+  display: block;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  height: 538px;
+  line-height: 28px;
+  margin-left: 25.5px;
+  margin-right: 25.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 1170px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.article {
+  width: 32.333333%;
+  float: left;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  border: none;
+}

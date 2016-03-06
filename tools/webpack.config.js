@@ -95,6 +95,8 @@ const config = {
       }, {
         test: /\.css$/,
         loader: 'style!css',
+        test: /\.jade$/,
+        loader: 'jade-loader',
       },
     ],
   },
@@ -123,7 +125,8 @@ const clientConfig = extend(true, {}, config, {
   // http://webpack.github.io/docs/configuration.html#devtool
   devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
   plugins: [
-    new webpack.DefinePlugin(GLOBALS),
+    ...config.plugins,
+    new webpack.DefinePlugin({ ...GLOBALS, 'process.env.BROWSER': true }),
     new AssetsPlugin({
       path: path.join(__dirname, '../build'),
       filename: 'assets.js',
@@ -177,7 +180,8 @@ const serverConfig = extend(true, {}, config, {
   },
   devtool: 'source-map',
   plugins: [
-    new webpack.DefinePlugin(GLOBALS),
+    ...config.plugins,
+    new webpack.DefinePlugin({ ...GLOBALS, 'process.env.BROWSER': false }),
     new webpack.BannerPlugin('require("source-map-support").install();',
       { raw: true, entryOnly: false }),
   ],
