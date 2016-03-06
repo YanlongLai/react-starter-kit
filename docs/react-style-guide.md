@@ -52,14 +52,14 @@ For more information google for [component-based UI development](https://google.
 class Navigation extends Component {
   static propTypes = { items: PropTypes.array.isRequired };
   render() {
-    return <nav><ul>{this.props.items.map(x => <li>{x.text}</li>}</ul></nav>;
+    return <nav><ul>{this.props.items.map(x => <li>{x.text}</li>)}</ul></nav>;
   }
 }
 
 // Better
 function Navigation({ items }) {
   return (
-    <nav><ul>{items.map(x => <li>{x.text}</li>}</ul></nav>;
+    <nav><ul>{items.map(x => <li>{x.text}</li>)}</ul></nav>;
   );
 }
 Navigation.propTypes = { items: PropTypes.array.isRequired };
@@ -125,9 +125,9 @@ import s from './Navigation.scss';
 
 function Navigation() {
   return (
-    <nav className={[s.root, this.props.className]}>
+    <nav className={`${s.root} ${this.props.className}`}>
       <ul className={s.items}>
-        <li className={[s.item, s.selected]}>
+        <li className={`${s.item} ${s.selected}`}>
           <a className={s.link} href="/products">Products</a>
         </li>
         <li className={s.item}>
