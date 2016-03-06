@@ -20,9 +20,11 @@ class Header extends Component {
       <div className={s.root}>
         <div className={s.container}>
           <div className={s.banner}>
-            <img className={s.image} width="86" height="86" src="https://venturedemo.files.wordpress.com/2015/09/person_8.jpg?w=86&amp;h=86&amp;crop=1" class="image" alt="Composition of portraits of happy people smiling" scale="0" />
+            <img className={s.image} width="86" height="86" src="http://icons.iconseeker.com/ico/futurama-vol-6---movies/hedionism-bot.ico" class="image" alt="Composition of portraits of happy people smiling" scale="0" />
+            <img className={s.image} width="86" height="86" src="http://www.veryicon.com/icon/ico/Movie%20%26%20TV/Futurama%20Vol.%201/Fry.ico" class="image" alt="Composition of portraits of happy people smiling" scale="0" />
+            <img className={s.image} width="86" height="86" src="http://icons.iconseeker.com/ico/futurama-vol-3---aliens/gunther.ico" class="image" alt="Composition of portraits of happy people smiling" scale="0" />
             <h1 className={s.bannerTitle}>Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with real content. This is required when, for example, the final text is not yet available.</h1>
-            <p className={s.bannerDesc}>- Jonathan Smith</p>
+            <p className={s.bannerDesc}>- Yan, Soar, Wesley</p>
           </div>
         </div>
       </div>
